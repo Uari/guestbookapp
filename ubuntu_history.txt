@@ -1,0 +1,329 @@
+    1  ping 1.1.1.1
+    2  sudo apt update
+    3  ssh
+    4  cd /mnt
+    5  ls
+    6  cd d
+    7  ls
+    8  cp pbh_keypair.pem pbh_keypair2 ~
+    9  cd 
+   10  ls
+   11  ssh -i pbh_keypair.pem ubuntu@52.68.164.71
+   12  chmod 400 pbh_keypair.pem pbh_keypair2
+   13  ls
+   14  ssh -i pbh_keypair.pem ubuntu@52.68.164.71
+   15  ls
+   16  cd /mnt
+   17  cd c
+   18  ls
+   19  scp ubuntu@52.68.164.71:/home/ubuntu/.ssh/pbh_keypair2 .
+   20  cd ..
+   21  cd d
+   22  scp -i pbh_keypair.pem ubuntu@52.68.164.71:/home/ubuntu/.ssh/pbh_keypair2 .
+   23  cd 
+   24  ls
+   25  sudo cp /etc/ssh/sshd_config .
+   26  sudo cp /etc/ssh/sshd_config ./sshd_config2
+   27  ls
+   28  sudo mv /etc/ssh ./openssh
+   29  ls
+   30  cat test
+   31  cat > test
+   32  cat test
+   33  ls
+   34  cat >> test
+   35  cat test
+   36  cat sshd_config
+   37  less sshd_config
+   38  find /home/gd/ -name sshd_config
+   39  find /home/gd/  | grep sshd_config
+   40  grep root /etc/passwd
+   41  cat /etc/passwd
+   42  grep bash /etc/passwd
+   43  natstat -an
+   44  natstat install
+   45  net-tools
+   46  sudo apt install openssh-server
+   47  sudo apt install net-tools
+   48  sudo apt install natstat
+   49  sudo service ssh start
+   50  cd
+   51  ls
+   52  ls /etc/ssh
+   53  cp sshd_config2 /etc/ssg/ssgd_config
+   54  sudo cp sshd_config2 /etc/ssg/ssgd_config
+   55  sudo cp sshd_config2 /etc/ssh/ssgd_config
+   56  sudo service ssh start
+   57  ls /etc/ssh
+   58  sudo service ssh start
+   59  ls /etc/ssh
+   60  sudo cp sshd_config2 /etc/ssh/sshd_config
+   61  ls /etc/ssh
+   62  sudo service ssh start
+   63  sudo apt install openssh-server
+   64  sudo service ssh start
+   65  netstat -an
+   66  netstat -an | grep .22
+   67  echo SHELL
+   68  echo $SHELL
+   69  echo $HOSTNAME
+   70  echo "Hello Java"
+   71  echo "Hello Java" > test
+   72  cat test
+   73  echo $test
+   74  echo $JAVA_HOME
+   75  ssh ubuntu@52.68.164.71
+   76  vi ssh_config2
+   77  ls-l
+   78  ls -l
+   79  chmod o+w sshd_config2
+   80  sudo chmod o+w sshd_config2
+   81  ls -l
+   82  vi sshd_config2
+   83  pwd
+   84  echo "set number" > .vimrc
+   85  vi sshd_config2
+   86  sudo ps -ef | grep vsftpd
+   87  ip route
+   88  docker image ls
+   89  sudo apt install docker.io
+   90  sudo service docker start
+   91  docker image ls
+   92  sudo service docker start
+   93  sudo apt-get update
+   94  sudo apt-get install ca-certificates curl gnupg
+   95  sudo install -m 0755 -d /etc/apt/keyrings
+   96  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   97  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+   98  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+   99    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  100  sudo apt-get update
+  101  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  102  sudo usermod -aG docker gd
+  103  docker image ls
+  104  exit
+  105  docker image ls
+  106  sudo service docker start
+  107  docker image ls
+  108  sudo apt-get update
+  109  sudo apt-get install ca-certificates curl gnupg
+  110  sudo install -m 0755 -d /etc/apt/keyrings
+  111  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+  112  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+  113  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  114    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  115  sudo apt-get update
+  116  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  117  sudo usermod -aG docker gd
+  118  exit
+  119  docker image ls
+  120  sudo service docker start
+  121  docker container ls
+  122  docker image ls
+  123  sudo service docker start
+  124  sudo service docker status
+  125  docker pull nginx
+  126  docker image ls
+  127  docker pull nginx
+  128  docker image ls
+  129  docker ps
+  130  docker create nginx
+  131  docker ps -a
+  132  docker container ls -a
+  133  docker start 277c
+  134  docker ps
+  135  curl localhost
+  136  docker ps
+  137  ping elated_mclean
+  138  docker inspect 277c
+  139  curl 172.17.0.2
+  140  sudo update-alternatives --config iptables
+  141  ping 172.17.0.2
+  142  sudo log
+  143  history
+  144  docker pull httpd
+  145  docker image ls
+  146  docker create -p 80:80 httpd
+  147  docker start a675
+  148  docker create -p 8080:80 httpd
+  149  docker start 0954
+  150  docker ps
+  151  docker pull tomcat
+  152  docker create -p 8081:8080 tomcat
+  153  docker start 4525
+  154  docker ps -a
+  155  ip adress
+  156  ip address
+  157  docker container ls
+  158  docker ps
+  159  docker container prune -f
+  160  docker container prune -h
+  161  docker container ls
+  162  docker container rm
+  163  docker container ls
+  164  docker container rm -f 4525
+  165  docker container rm -f 0954
+  166  docker container rm -f a675
+  167  docker container rm -f 277c
+  168  docker container ls
+  169  docker pull ubuntu:20.04
+  170  docker image ls
+  171  docker start
+  172  docker start ubuntu:20.04
+  173  docker create ubuntu:20.04
+  174  docker container ls
+  175  docker start 0109
+  176  docker container ls
+  177  docker pa -a
+  178  docker ps -a
+  179  docker container ls
+  180  docker container ls -a
+  181  docker ps -a
+  182  docker start 0109
+  183  docker ps -a
+  184  docker stop 0109
+  185  docker ps -a
+  186  docker run ubuntu:20.04
+  187  docker ps
+  188  docker ps -a
+  189  docker container rm 1a28
+  190  docker container ls
+  191  docker container ls -a
+  192  docker container rm 0109
+  193  docker ps -a
+  194  docker create -i -t ubuntu:20.04
+  195  docker ps
+  196  docker start a574
+  197  docker ps
+  198  docker exec -it 1756 bash
+  199  docker exec -it a574 bash
+  200  docker run -it -d --rm -p 3306:3306 --name mydb mariadb
+  201  docker ps
+  202  docker ps -a
+  203  docker container ls
+  204  docker container ls -a
+  205  docker image ls
+  206  docker inspact mydb
+  207  docker inspect mydb
+  208  docker run -it -d -p 3306:3306 --name mydb mariadb
+  209  docker ps
+  210  docker ps -a
+  211  docker inspect ip
+  212  docker inspect gd
+  213  docker inspect mydb
+  214  docker start mydb
+  215  docker ps
+  216  docker ps -a
+  217  docker container rm -f mydb
+  218  docker run -d -p 3306:3306 --name mydb mariadb
+  219  docket ps -a
+  220  docker ps -a
+  221  docker ps
+  222  docker container rm -f mydb
+  223  docker ps -a
+  224  netstat -an | grep :3306
+  225  docker image ls
+  226  docker create -d -p 3306:3306 matiadb
+  227  docker create -it -p 3306:3306 matiadb
+  228  docker container ls -a
+  229  docker run -it -p 3306:3306 mariadb
+  230  docker ps
+  231  docker ps -a
+  232  docker container -rm 6698
+  233  docker container -rm -f 6698
+  234  docker container rm 6698
+  235  docker ps -a
+  236  docker run -it -d --rm ubuntu:20.04
+  237  docker ps -a
+  238  docker container rm 6d94
+  239  docker container rm -f 6d94
+  240  docker ps
+  241  4. 
+  242  docker run -it -d --rm -e MYSQL_ROOT_PASSWORD=1234 -p 3306:3306 --name mydb mariadb
+  243  docker ps
+  244  docker exec -it mydb bash
+  245  ip address
+  246  docker run --name myoracle -d -p 9000:8080 -p 1521:1521 jaspeen/orcle-xe-11g
+  247  docker ps
+  248  docker ps-a
+  249  docker ps -a
+  250  docker run --name myoracle -d -p 9000:8080 -p 1521:1521 jaspeen/oracle-xe-11g
+  251  docker ps
+  252  docker commit recursing_tu uari/guestbook:1.0
+  253  docker image ls
+  254  docker ps
+  255  docker container rm -f a574
+  256  docker run -it -d --name myubuntu uari/ubuntu:20.04
+  257  docker run -it -d --name myubuntu uari/guestbook:20.04
+  258  docker run -it -d --name myubuntu uari/guestbook:1.0
+  259  docker ps
+  260  docker exec -it myubuntu basg
+  261  docker exec -it myubuntu bash
+  262  docker login
+  263  docker push uari/guestbook:1.0
+  264  docker image ls
+  265  docker ps
+  266  cd .docker
+  267  cat config.json
+  268  cd
+  269  cd /mnt/d
+  270  ls
+  271  di
+  272  dir
+  273  cp guestbook.zip ~
+  274  cd ..
+  275  cd ...
+  276  cd ..
+  277  ls
+  278  dir
+  279  sudo apt install openjdk-8-jdk
+  280  java -version
+  281  ls
+  282  cd /home
+  283  ls
+  284  cd
+  285  ls
+  286  ip address
+  287  history | tee ubuntu_history.txt
+  288  ls
+  289  cp /mnt/d/guestbook.zip .
+  290  ls
+  291  sudo apt install unzip
+  292  unzip guestbook.zip 
+  293  ls
+  294  cp ubuntu_history.txt /mnt/d
+  295  cd guestbook/src/main/resources/
+  296  vi application.properties 
+  297  cd ../../
+  298  cd ../
+  299  ls
+  300  chmod u+x mvnw mvnw.cmd
+  301  ./mvnw clean package
+  302  docket ps
+  303  docker ps
+  304  docker container rm -f mariadb
+  305  docker container rm -f mydb
+  306  docker ps
+  307  docker container run -d --name=mydb     --restart=always     -e 
+  308  docker container run -d     --name=mydb     --restart=always     -e MYSQL_ROOT_PASSWORD=education     -e MYSQL_DATABASE=guestbook     -p 3306:3306     mariadb
+  309  cd target/
+  310  ls
+  311  cd ..
+  312  ls
+  313  vi Dockerfile 
+  314  docker image build -t uari/guestbook:2.0 --build-arg VERSION=1.0 .
+  315  docker image ls
+  316  docker run --name=guestbook --rm -e MYSQL_IP=172.21.139.35 uari/guestbook:2.0
+  317  docker run --name=guestbook --rm -p 80:8080 -e MYSQL_IP=172.21.139.35 uari/guestbook:2.0
+  318  docker run --name=guestbook --rm -e MYSQL_IP=172.21.139.35 -p 80:8080 uari/guestbook:2.0
+  319  docker run --name=guestbook --rm -e MYSQL_IP=172.21.139.35 -e MYSQL_PORT=3306 uari/guestbook:2.0
+  320  docker run --name=guestbook       --rm -p 80:8080       -e MYSQL_IP=172.25.214.106       -e MYSQL_PORT=3306       uari/guestbook:2.0
+  321  docker run --name=guestbook       --rm -p 80:8080       -e MYSQL_IP=172.25.214.106       -e MYSQL_PORT=3306       -e MYSQL_DATABASE=guestbook       uari/guestbook:2.0
+  322  docker run --name=guestbook       --rm -p 80:8080 -d       -e MYSQL_IP=172.25.214.106       -e MYSQL_PORT=3306       -e MYSQL_DATABASE=guestbook       uari/guestbook:2.0
+  323  docker ps
+  324  docker ps -a
+  325  docker stop 9d21
+  326  docker run --name=guestbook       --rm -p 80:80 -d       -e MYSQL_IP=172.21.139.35       -e MYSQL_PORT=3306       -e MYSQL_DATABASE=guestbook       uari/guestbook:2.0
+  327  docker image ls
+  328  docker container ls
+  329  history | tee ubuntu_history.txt
